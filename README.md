@@ -27,8 +27,7 @@ if needed
 
 For more information
 
-
-http://friedcircuits.us/docs
+http://friedcircuits.us/docs/mooksappe/
 
 
 Changes
