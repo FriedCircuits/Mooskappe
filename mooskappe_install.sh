@@ -96,6 +96,7 @@ if [ $upgrade -eq 1 ]; then
     fi
 else
     overwrite=0
+    cp $installdir/config.py.example $installdir/config.py
 fi
 
     if [ $overwrite -eq 1 ] || [ $upgrade -eq 0 ]; then
