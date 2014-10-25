@@ -28,7 +28,7 @@ if needed
 For more information
 
 
-http://friedcircuits/docs
+http://friedcircuits.us/docs
 
 
 Changes
