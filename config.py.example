@@ -1,0 +1,29 @@
+#! /usr/bin/python
+
+#Gmail Settings
+GMAIL_USER = 'user@domain.com'
+GMAIL_PASS = 'pass'
+SMTP_SERVER = 'smtp.gmail.com'
+SMTP_PORT = 587
+RECIPIENT = ['user@domain.com']
+#How often to send alert email in seconds
+ALERT_TIME = 320.0
+
+#If Temp sensor function is enabled
+#Use either F or C, both are checked
+TEMP_ENABLED = 0
+TEMP_MAX_F = 90.0
+TEMP_MAX_C = 40.0
+
+#Color Alert settings?
+
+
+#Notification settings
+ALERT_ENABLED = 0
+
+
+#Hashrate min in MH/s
+HASHRATE_MIN = 1
+
+
+
