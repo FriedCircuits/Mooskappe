@@ -60,13 +60,14 @@ fi
 #This will reset the ownership to the user that called sudo to run this script
 chown -R $(logname).$(id -gn $(logname)) $installdir &> /dev/null
 
-#Check where test python is to test LCD
-echo "$(tput setaf 2)=====================$(tput sgr 0)"
-echo "Mooskappe test running, check LCD display"
-if [ -f $installdir/"mooskappe_test.py" ]; then
-    python $installdir/"mooskappe_test.py"
+#Check where test python is to test LCD - skip on updates
+if [ $upgrade -eq 0 ]; then
+    echo "$(tput setaf 2)=====================$(tput sgr 0)"
+    echo "Mooskappe test running, check LCD display"
+    if [ -f $installdir/"mooskappe_test.py" ]; then
+        python $installdir/"mooskappe_test.py"
+    fi
 fi
-
 #Add init service to start the PiMiner software at boot time
 echo "$(tput setaf 2)=====================$(tput sgr 0)"
 echo "Adding init service to run Mooskappe on boot"
